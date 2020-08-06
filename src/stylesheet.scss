@@ -15,9 +15,31 @@ $dark: #0f0a0a;
     font-weight: 400;
 }
 
-p {
+p,.page-content,blockquote {
     font-family: 'Alegreya', serif;
     font-size: 18px;
+}
+
+.page-content {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+blockquote {
+    margin-left: 30px;
+    border-left: solid;
+    padding-left: 10px;
+}
+
+b,ol,li {
+    font-family: inherit;
+}
+
+h3 {
+    font-family: 'sen', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
 h2 {

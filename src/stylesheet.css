@@ -9881,9 +9881,31 @@ h3 {
   font-weight: 400;
 }
 
-p {
+p, .page-content, blockquote {
   font-family: "Alegreya", serif;
   font-size: 18px;
+}
+
+.page-content {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+blockquote {
+  margin-left: 30px;
+  border-left: solid;
+  padding-left: 10px;
+}
+
+b, ol, li {
+  font-family: inherit;
+}
+
+h3 {
+  font-family: "sen", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 h2 {
@@ -9894,21 +9916,6 @@ h2 {
   text-decoration: underline;
 }
 
-#nav-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  #nav-toggle {
-    display: inline;
-  }
-
-  #nav-content {
-    position: relative;
-    margin-top: -40px;
-    display: block;
-  }
-}
 #title {
   font-size: 60px;
 }

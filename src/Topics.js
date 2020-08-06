@@ -1,4 +1,5 @@
 import React from 'react';
+import ChurchAttendance from './ChurchAttendance.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 const Topics = () => {
@@ -71,20 +72,12 @@ const Topics = () => {
 const Topic = () => {
     let { topicId } = useParams();
 
-    return (
-        <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-3" />
-                <div className="col-md-6">
-                    <div id="title-colorbox" className="bg-primary">
-                        <h1 className="mx-auto text-center text-white p-5" id="title">
-                            {topicId}
-                        </h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+    switch (topicId) {
+        default:
+            return ( <div className="container-fluid text-danger"><h1 className="mx-auto" style={{"fontSize": "100px"}}>404: Page Not Found</h1><Link to='/topics' className="text-primary" style={{"fontSize": "70px"}}>Return to Topics</Link> </div> );
+        case 'church-attendance':
+            return (<ChurchAttendance />);
+    }
 }
 
 export default Topics;
