@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import './stylesheet.css';
+import NavBar from './NavBar';
+import Home from './Home';
+import About from './About';
+import Topics from './Topics';
+import StudentExperiences from './StudentExperiences';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+// --VERSION WITH TRANSITIONS UNDER DEVELOPMENT IN './App-with-transitions.js'
+//import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/topics" component={Topics} />
+          <Route path="/student-experiences" component={StudentExperiences} />
+          <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found</h1>)} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

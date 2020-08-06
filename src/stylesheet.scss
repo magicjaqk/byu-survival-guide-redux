@@ -1,0 +1,57 @@
+$primary: rgb(3, 37, 78);
+$secondary: #3c4647;
+$success: #1c9711;
+$info: #034d6b;
+$warning: #ceb007;
+$danger: #bb1010;
+$light: #f5efed;
+$dark: #0f0a0a;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Sen&display=swap');
+
+* {
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Alegreya', serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.nav-link {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// @keyframes intro {
+//     0% {
+//         width: 0%;
+//     }
+//     100% {
+//         width: 100%;
+//     }
+// }
+
+// #title-colorbox {
+//     z-index: -1;
+//     animation: intro 2000ms ease-in-out 1 forwards;
+// }
+
+#title {
+    font-size: 60px;
+//     color: $primary;
+    
+//     &:after {
+//         position: absolute;
+//         content: "Welcome to the BYU Survival Guide!";
+//         color: white;
+//         mix-blend-mode: screen;
+//     }
+}
