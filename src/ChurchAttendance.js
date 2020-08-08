@@ -11,7 +11,7 @@ const ChurchAttendance = () => {
                             Church Attendance
                         </h1>
                     </div>
-                    <div className="page-content mt-4">
+                    <div className="page-content mt-4 mx-2">
                         <p>
                             Going to church after a faith transition can be somewhat of a traumatic experience for some. It can trigger anxiety, depression, and other downward emotional spirals that are not ideal for a person already dealing with the repercussions of realigning belief systems. <br/>
                             <br/>
@@ -51,7 +51,7 @@ const ChurchAttendance = () => {
                         <p>
                             It can be really stressful if the Bishop pulls you in and wants to know why your attendance has lessened in the recent or not so recent past. In my experience, the one barrier you have to implement that is near bulletproof is psychological well-being. Just by saying something along the lines of:
                         </p>
-                        <blockquote>
+                        <blockquote className="ml-2">
                             “Sorry I haven’t come to church recently. I’ve been going through a period of self-discovery and depression. My therapist recommended I start to cut things out of my life that are adding to my stress, then slowly add them back in. Church attendance has given me social anxiety in the past, and now that I’m working through it more quickly, I’m working to start adding it back into my life. I understand that I am required to go, but I just needed some time to get my life back on track without even the smallest sources of anxiety. I promise you though that I am working to start attending more frequently, but can you help support me by allowing me to do so at a reasonable pace?”
                         </blockquote>
                         <p>

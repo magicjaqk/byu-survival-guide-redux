@@ -5,8 +5,8 @@ const Home = () => {
     return (
         <div className="container-fluid page-wrapper" id="Home">
             <div className="row">
-                <div className="col-xl-2" />
-                <div className="col-xl-8 mx-sm-3">
+                <div className="col-md-3" />
+                <div className="col-md-6">
                     <div id="title-colorbox" className="bg-primary">
                         <h1 className="mx-auto text-center text-white p-5" id="title">
                             Welcome to the BYU Survival Guide!
@@ -24,7 +24,7 @@ const Home = () => {
                         </h2>
                     </div>
                 </div>
-                <div className="col-xl-2" />
+                <div className="col-md-3" />
             </div>
         </div>
     );

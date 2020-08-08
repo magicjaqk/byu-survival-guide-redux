@@ -1,5 +1,6 @@
 import React from 'react';
 import ChurchAttendance from './ChurchAttendance.js';
+import BishopsInterviews from './BishopsInterviews.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 const Topics = () => {
@@ -16,7 +17,7 @@ const Topics = () => {
                                     Topics
                                 </h1>
                             </div>
-                            <ul className="list-group list-group-flush">
+                            <ul className="list-group list-group-flush page-content">
                                 <li className="list-group-item">
                                     <Link to={`${url}/bishops-interviews`}>Bishop's Interviews</Link>
                                 </li>
@@ -74,7 +75,9 @@ const Topic = () => {
 
     switch (topicId) {
         default:
-            return ( <div className="container-fluid text-danger"><h1 className="mx-auto" style={{"fontSize": "100px"}}>404: Page Not Found</h1><Link to='/topics' className="text-primary" style={{"fontSize": "70px"}}>Return to Topics</Link> </div> );
+            return ( <div className="container-fluid text-danger" style={{"height": "100vh"}}><br /><br /><h1 className="mx-auto" style={{"fontSize": "calc(70px + .5vw)"}}>Topic Page Not Found</h1><br/><br/><h3 className="mx-auto"><Link to='/topics' className="text-primary">Return to Topic Selection</Link></h3></div> );
+        case 'bishops-interviews':
+            return (<BishopsInterviews />);
         case 'church-attendance':
             return (<ChurchAttendance />);
     }

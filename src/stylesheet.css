@@ -5,7 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Alegreya&family=Sen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sen&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9878,46 +9878,60 @@ h3 {
 }
 * {
   font-family: "Sen", sans-serif;
-  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 p, .page-content, blockquote {
-  font-family: "Alegreya", serif;
-  font-size: 18px;
-}
-
-.page-content {
-  margin-right: 30px;
-  margin-left: 30px;
+  font-family: "Noto Serif", serif;
+  font-size: calc(16px + .5vw);
 }
 
 blockquote {
-  margin-left: 30px;
-  border-left: solid;
+  border-left: solid 1.5px;
   padding-left: 10px;
+  font-style: italic;
 }
 
-b, ol, li {
+b, ol, ul, li, a {
   font-family: inherit;
+  font-size: inherit;
+}
+
+.page-content > a, .page-content > a:hover {
+  color: #079afc;
 }
 
 h3 {
   font-family: "sen", sans-serif;
   margin-bottom: 20px;
   margin-top: 20px;
-  font-size: 30px;
+  font-size: calc(28px + .5vw);
 }
 
 h2 {
-  font-size: 40px;
+  font-size: calc(34px + .5vw);
 }
 
 .nav-link:hover {
   text-decoration: underline;
 }
 
+#footer {
+  font-size: calc(14px + .5vw);
+  font-family: "sen", sans-serif !important;
+  margin-top: 10px;
+}
+
+#footer:hover {
+  text-decoration: underline;
+  z-index: 99;
+}
+
 #title {
-  font-size: 60px;
+  font-size: calc(52px + .5vw);
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

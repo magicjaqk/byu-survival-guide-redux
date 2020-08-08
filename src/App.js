@@ -11,20 +11,35 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 //import {CSSTransition, TransitionGroup} from 'react-transition-group';
 
 const App = () => {
+    const scrollFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
 
-  return (
-    <Router>
-      <div className="App">
-        <NavBar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/topics" component={Topics} />
-          <Route path="/student-experiences" component={StudentExperiences} />
-          <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found</h1>)} />
-        </Switch>
-      </div>
-    </Router>
+    return (
+        <Router>
+            <div className="App">
+                <NavBar />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route path="/topics" component={Topics} />
+                    <Route path="/student-experiences" component={StudentExperiences} />
+                    <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found</h1>)} />
+                </Switch>
+                <div className="row mx-1">
+                    <div className="col-md-3" />
+                    <div className="col-md-6">
+                        <div className="bg-primary">
+                            <p className="mx-auto text-center text-white p-5" id="footer" onClick={scrollFunction}>
+                                Return to top of page
+                            </p>
+                        </div>
+                    </div>
+                    <div className="col-md-3" />
+                </div>
+            </div>
+        </Router>
   );
 }
 
