@@ -11,7 +11,7 @@ const ChurchAttendance = () => {
                             Bishop's Interviews
                         </h1>
                     </div>
-                    <div className="page-content mt-4 mx-2">
+                    <div className="page-content topic-content mt-4 mx-2">
                         <p>
                             One of the most frightening parts of being a non-orthodox BYU student is being outed as such, and interviews from a bishop would appear to be the greatest threat to exposing one’s inner-ideologies. In actuality, bishops interviews are not the most likely source of being ousted: friends are (but that’s another topic that will be covered in more detail elsewhere). <br/>
                             <br/>
@@ -25,7 +25,7 @@ const ChurchAttendance = () => {
                             <br/>
                             The most common form of cold reading that that bishops and stake presidents (and even mission presidents) use is the <i>shotgun statement</i>. <br/>
                         </p>
-                        <blockquote>
+                        <blockquote className="ml-2">
                             Shotgun statements [rely] on using a lot of general information so that something is bound to hit someone. Much like how a shot gun fires lots of pellets instead of a single projectile. <br/>
                             <br/>
                             The point here is to be quite vague but general so you get a hit from the audience.
@@ -35,13 +35,13 @@ const ChurchAttendance = () => {
                             <br/>
                             Consider that in context with this statement:
                         </p>
-                        <blockquote>
+                        <blockquote className="ml-2">
                             I feel like there’s something you might want to talk about… Is there anything you feel that you need to repent of?
                         </blockquote>
                         <p>
                             or <br/>
                         </p>
-                        <blockquote>
+                        <blockquote className="ml-2">
                             The spirit it telling me that you are struggling with something and I wanted to reach out to you.
                         </blockquote>
                         <p>
@@ -49,13 +49,13 @@ const ChurchAttendance = () => {
                             <br/>
                             Sometimes, bishops can express seemingly more specific statements such as:
                         </p>
-                        <blockquote>
+                        <blockquote className="ml-2">
                             [Addressing a young man]: I feel as though you may be struggling with pornography and masturbation.
                         </blockquote>
                         <p>
                             or <br/>
                         </p>
-                        <blockquote>
+                        <blockquote className="ml-2">
                             [Addressing a young woman]: I feel as though you may be struggling with self-worth or feeling fulfilled.
                         </blockquote>
                         <p>
@@ -64,7 +64,6 @@ const ChurchAttendance = () => {
                             <i>Shifting Blame</i> is the practice of refusing to “admit [being wrong] and [wording] it slightly different or [working] in a slightly different meaning.” Then, if that doesn’t work, “tell them they are wrong [and instruct them to] sit down and think about it, then move onto the next subject.” This one is most frustrating to me because of the psychological damage it leaves on the individual being told to take the blame. Maybe the young man says, “No I’m not struggling with pornography or masturbation, but thank you for the reminder.” This doesn’t reflect well on the bishop’s ability to discern truth and it doesn’t make sense to him because <b>the bishop believes he can discern truth by the power of God</b>. The only way he can reconcile this is to blame the young man by suggesting that he is either lying or the young man is commiting those sins in other areas of his life and he better take the time to seek out the Lord and find how he can become closer to Christ. This is damaging to a kid: to go home and think for hours about what he <i>might</i> be doing wrong so that he can seek out his own punishment for it after by talking to his bishop. <br/>
                             <br/>
                             <b>It’s not mind-reading</b>. It’s not the gift of discernment. It’s an abuse of power and authority that damages people young and old alike. <br/>
-                            <br/>
                         </p>
                         <h3>2. Never Admit Anything:</h3>
                         <p>
@@ -73,7 +72,6 @@ const ChurchAttendance = () => {
                             <b>Keep anything remotely incriminating to yourself.</b><br/>
                             <br/>
                             This would include anything about breaking the law of chastity, word of wisdom, associating/supporting groups that are critical of the church or its leadership, any details on a faith crisis/transition/instability etc. Anything that would warrant an investigation or closer scrutiny on the part of the bishop or other ward leadership is going to create more problems than it would solve. As well, take into account the impact you may have on those you associate with. Your main goal is to distance yourself as much as possible from any sort of “honor code violation” or “spiritually illegal activity.” <br/>
-                            <br/>
                         </p>
                         <h3>3. How to Subvert Investigation:</h3>
                         <p>
@@ -82,7 +80,6 @@ const ChurchAttendance = () => {
                             For example, if a bishop asks you if you have been obeying the law of chastity, a good response might be, “I think so bishop, but does it count if I have looked at a girl too long or wanted to hold her hand before dating?” <br/>
                             <br/>
                             That perfectly encapsulates the naivety that places one above suspicion in the minds of the general LDS membership. The bishop is most likely to assume that if you are concerned with holding hands and are confessing that to him, he doesn’t have to worry about any sort of masturbation or pornography.  Of course, this example may be extreme. Maybe don’t be sooo overt. Assess your bishop as best you can, then act accordingly. <br/>
-                            <br/>
                         </p>
                         <h3>4. Befriending Your Bishop:</h3>
                         <p>

@@ -11,7 +11,7 @@ const ChurchAttendance = () => {
                             Church Attendance
                         </h1>
                     </div>
-                    <div className="page-content mt-4 mx-2">
+                    <div className="page-content topic-content mt-4 mx-2">
                         <p>
                             Going to church after a faith transition can be somewhat of a traumatic experience for some. It can trigger anxiety, depression, and other downward emotional spirals that are not ideal for a person already dealing with the repercussions of realigning belief systems. <br/>
                             <br/>
@@ -60,7 +60,6 @@ const ChurchAttendance = () => {
                             You can also try the “my boyfriend/girlfriend is in another ward and I attend with her/him”, but from what I understand that usually results in being asked to attend at least both wards’ sacrament meetings consistently. Of course, the bishop won’t know your attendance in other wards so even if your significant other is made up or real, they will only be able to enforce you showing up consistently to your current ward. I prefer the psychological stability defense because it leaves a possibility open for rocky attendance moving forward rather than immediately moving into perfect Sunday attendance. <br/>
                             <br/>
                             Good luck in navigating your bishop and ward! Each one is different so do your best to feel out what you can or cannot get away with in your specific situation! <br/>
-                            <br/>
                         </p>
                     </div>
                 </div>

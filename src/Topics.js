@@ -1,6 +1,7 @@
 import React from 'react';
 import ChurchAttendance from './ChurchAttendance.js';
 import BishopsInterviews from './BishopsInterviews.js';
+import TithingSettlement from './TithingSettlement.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 const Topics = () => {
@@ -80,6 +81,8 @@ const Topic = () => {
             return (<BishopsInterviews />);
         case 'church-attendance':
             return (<ChurchAttendance />);
+        case 'tithing-settlement':
+            return (<TithingSettlement />);
     }
 }
 

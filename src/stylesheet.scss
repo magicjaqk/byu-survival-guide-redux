@@ -6,6 +6,7 @@ $warning: #ceb007;
 $danger: #bb1010;
 $light: #f5efed;
 $dark: #0f0a0a;
+$white: #f7f7f7;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sen&display=swap');
@@ -29,13 +30,15 @@ blockquote {
     font-style: italic;
 }
 
-b,ol,ul,li,a {
+b,ol,ul,li,i {
+    background-color: inherit !important;
     font-family: inherit;
     font-size: inherit;
 }
 
-.page-content>a,.page-content>a:hover {
-    color: #079afc;
+.topic-content a, .topic-content a:hover {
+    color: #0002a0 !important;
+    font-family: inherit;
 }
 
 h3 {
