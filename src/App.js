@@ -2,10 +2,10 @@ import React from 'react';
 //import './App.css';
 import './stylesheet.css';
 import NavBar from './NavBar';
-import Home from './Home';
-import About from './About';
-import Topics from './Topics';
-import StudentExperiences from './StudentExperiences';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Topics from './Pages/Topics';
+import StudentExperiences from './Pages/StudentExperiences';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 // --VERSION WITH TRANSITIONS UNDER DEVELOPMENT IN './App-with-transitions.js'
 //import {CSSTransition, TransitionGroup} from 'react-transition-group';

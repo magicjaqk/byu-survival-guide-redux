@@ -9947,8 +9947,13 @@ h2 {
   z-index: 99;
 }
 
+#experiment-toggle:hover {
+  text-decoration: none;
+}
+
 #title {
   font-size: calc(52px + .5vw);
+  color: #f7f7f7;
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

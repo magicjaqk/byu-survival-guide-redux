@@ -84,6 +84,12 @@ h2 {
     z-index: 99;
 }
 
+#experiment-toggle {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 // @keyframes intro {
 //     0% {
 //         width: 0%;
@@ -100,7 +106,7 @@ h2 {
 
 #title {
     font-size: calc(52px + .5vw);
-//     color: $primary;
+    color: $white;
     
 //     &:after {
 //         position: absolute;

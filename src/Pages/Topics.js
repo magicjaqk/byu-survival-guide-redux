@@ -42,7 +42,13 @@ const Topics = () => {
                                     <Link onClick={scrollFunction} to={`${url}/moral-ambiguity`}>Moral Ambiguity</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link onClick={scrollFunction} to={`${url}/experimentation-harm-reduction`}>Experimentation and Harm Reduction</Link>
+                                    <Link data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle">Experimentation and Harm Reduction</Link>
+                                    <div className="collapse" id="experimentation-list">
+                                        <ol className="list-group pl-5">
+                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/experimentation/general`}>General Harm Reduction and Self-Care</Link></li>
+                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/experimentation/general`}>General Harm Reduction and Self-Care</Link></li>
+                                        </ol>
+                                    </div>
                                 </li>
                                 <li className="list-group-item">
                                     <Link onClick={scrollFunction} to={`${url}/maintaining-appearances`}>Maintaining Appearances</Link>
