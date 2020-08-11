@@ -28,15 +28,15 @@ const App = () => {
                     <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found</h1>)} />
                 </Switch>
                 <div className="row mx-1">
-                    <div className="col-md-3" />
-                    <div className="col-md-6">
+                    <div className="col-lg-3" />
+                    <div className="col-lg-6">
                         <div className="bg-primary">
                             <p className="mx-auto text-center text-white p-5" id="footer" onClick={scrollFunction}>
                                 Return to top of page
                             </p>
                         </div>
                     </div>
-                    <div className="col-md-3" />
+                    <div className="col-lg-3" />
                 </div>
             </div>
         </Router>

@@ -1,6 +1,18 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 const TithingSettlement = () => {
+    const [rotateArrow1, setRotateArrow1] = useState(true);
+    const [rotateArrow2, setRotateArrow2] = useState(true);    
+
+    const alterArrow = (arrow) => {
+        if (arrow === true) {
+            return 'arrowUp';
+        }
+        else {
+            return 'arrowDown';
+        }
+    };
+
     return (
         <div className="container-fluid">
             <div className="row">
@@ -32,13 +44,13 @@ const TithingSettlement = () => {
                             <br/>
                             There are of course other positions to take on the subject, but I did want to start by saying that there’s no pressure to not pay tithing if that’s something you want to do. I commend those who want to fulfill obligations they have made. I also admire those who want to act in accordance with what they feel is most moral despite previous promises. <br/>
                         </p>
-                        <h3>Tithing Settlement <i>Shouldn’t</i> Be A Problem:</h3>
+                        <h3>Tithing Settlement <i>Shouldn’t</i> Be a Problem:</h3>
                         <p>
                             I say <i>shouldn’t</i> because honestly things can change drastically from bishop to bishop. In general, not showing up for tithing settlement won’t be a problem. However, if it is an issue and you don’t want to play the classic game known as ‘bishop’s roulette’, getting through tithing settlement is as easy as saying ‘yes’. <br/>
                             <br/>
                             In most instances, the Bishop and his counselors can see how much you have donated in tithing and fast offerings; however, if you pay using a specific method, he will likely not be able to see whether you have paid tithing let alone see how much you paid. That said, the bishop can see it if he jumps through a series of hoops which I understand to be tedious enough to discourage it, but I do want to make it known that this method is not without weakness. <br/>
                         </p>
-                        <h3>Direct Payments To The Church:</h3>
+                        <h3>Direct Payments to the Church:</h3>
                         <blockquote className="ml-2">
                             <a href="https://tech.churchofjesuschrist.org/wiki/index.php?title=Donations_to_Church_Headquarters&redirect=no">Donations To Church Headquarters</a>
                             <hr/>
@@ -49,9 +61,9 @@ const TithingSettlement = () => {
                         <p>
                             In order to make these payments, all you need to do is either send the payment by check or directly wire the money to the main offices of the church. <br/>
                             <br/>
-                            If you need to know more about either of these methods, you may expand them here:
+                            If you need to know more about either of these methods, you can find them here:
                         </p>
-                        <button className="btn btn-primary mb-3" style={{ 'fontSize': 'inherit', 'fontFamily':'Sen' }} data-toggle="collapse" data-target="#wire-transfer-collapse">Wire Transfer Payment Instructions &emsp; <i class="fas fa-chevron-down" style={{'fontSize':'90%'}}></i></button>
+                        <button onClick={() => setRotateArrow1(!rotateArrow1)} className="btn btn-primary mb-3 w-100" style={{ 'fontSize': 'inherit', 'fontFamily':'Sen' }} data-toggle="collapse" data-target="#wire-transfer-collapse">Wire Transfer Payment Instructions<br/><i className={`fas fa-chevron-down ${alterArrow(rotateArrow1)}`} style={{'fontSize':'90%'}}></i></button>
                         <div className="collapse" id="wire-transfer-collapse">
                             <blockquote className="ml-2">
                                 To wire transfer donations to Church Headquarters: <br/>
@@ -81,8 +93,7 @@ const TithingSettlement = () => {
                                 Or email to: <a href="mailto:Donations@ldschurch.org">Donations@ldschurch.org</a>
                             </blockquote>
                         </div>
-                        <br/>
-                        <button className="btn btn-primary mb-3" style={{ 'fontSize': 'inherit', 'fontFamily': 'Sen' }} data-toggle="collapse" data-target="#check-transfer-collapse">Check Transfer Payment Instructions &nbsp; <i class="fas fa-chevron-down" style={{ 'fontSize': '90%' }}></i></button>
+                        <button onClick={() => setRotateArrow2(!rotateArrow2)} className="btn btn-primary mb-3 w-100" style={{ 'fontSize': 'inherit', 'fontFamily': 'Sen' }} data-toggle="collapse" data-target="#check-transfer-collapse">Check Transfer Payment Instructions<br/><i className={`fas fa-chevron-down ${alterArrow(rotateArrow2)}`} style={{ 'fontSize': '90%' }}></i></button>
                         <div className="collapse" id="check-transfer-collapse">
                             <blockquote className="ml-2">
                                 To send in a check for a donation make the check payable to Corporation of the President. <br/>
@@ -117,7 +128,7 @@ const TithingSettlement = () => {
                                 If you have further questions, please call 801-240-2554 or 1-800-453-3860 ext 2-2554 or email <a href="mailto:donations@ldschurch.org">donations@ldschurch.org</a>
                             </blockquote>
                         </div>
-                        <h3>What to say in tithing settlement:</h3>
+                        <h3>What to Say in Tithing Settlement:</h3>
                         <p>
                             Because it’s possible to pay via wire transfer or by check without the bishop knowing, all that needs to be said is “Yes, I am a full tithe payer.” <br/>
                             <br/>

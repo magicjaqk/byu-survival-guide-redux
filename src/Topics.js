@@ -2,9 +2,16 @@ import React from 'react';
 import ChurchAttendance from './ChurchAttendance.js';
 import BishopsInterviews from './BishopsInterviews.js';
 import TithingSettlement from './TithingSettlement.js';
+import AntiMormon from './AntiMormon.js';
+import MoralAmbiguity from './MoralAmbiguity.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 const Topics = () => {
+    const scrollFunction = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
     let {path, url} = useRouteMatch();
     return (
         <Switch>
@@ -20,43 +27,43 @@ const Topics = () => {
                             </div>
                             <ul className="list-group list-group-flush page-content">
                                 <li className="list-group-item">
-                                    <Link to={`${url}/bishops-interviews`}>Bishop's Interviews</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/bishops-interviews`}>Bishop's Interviews</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/church-attendance`}>Church Attendance</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/church-attendance`}>Church Attendance</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/tithing-settlement`}>Tithing Settlement</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/tithing-settlement`}>Tithing Settlement</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/what-is-anti-mormon`}>What is "Anti-Mormon Material"?</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/what-is-anti-mormon`}>What is "Anti-Mormon Material"?</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/moral-ambiguity`}>Moral Ambiguity</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/moral-ambiguity`}>Moral Ambiguity</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/experimentation-harm-reduction`}>Experimentation and Harm Reduction</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/experimentation-harm-reduction`}>Experimentation and Harm Reduction</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/maintaining-appearances`}>Maintaining Appearances</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/maintaining-appearances`}>Maintaining Appearances</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/family-relations`}>Family Relations</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/family-relations`}>Family Relations</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/self-care-wellness`}>Self-Care/Mental Health and Wellness</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/self-care-wellness`}>Self-Care/Mental Health and Wellness</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/lgbtq-resources`}>LGBTQ+ Resources</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/lgbtq-resources`}>LGBTQ+ Resources</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/find-a-group`}>Finding a Group</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/find-a-group`}>Finding a Group</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/school-transfer-guide`}>School Transfer Guide</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/school-transfer-guide`}>School Transfer Guide</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to={`${url}/relevant-links`}>Relevant Links</Link>
+                                    <Link onClick={scrollFunction} to={`${url}/relevant-links`}>Relevant Links</Link>
                                 </li>
                             </ul>
                         </div>
@@ -83,6 +90,10 @@ const Topic = () => {
             return (<ChurchAttendance />);
         case 'tithing-settlement':
             return (<TithingSettlement />);
+        case 'what-is-anti-mormon':
+            return (<AntiMormon />);
+        case 'moral-ambiguity':
+            return (<MoralAmbiguity />);
     }
 }
 

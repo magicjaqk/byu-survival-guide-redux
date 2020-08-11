@@ -9901,9 +9901,14 @@ b, ol, ul, li, i {
   font-size: inherit;
 }
 
-.topic-content a, .topic-content a:hover {
-  color: #0002a0 !important;
+.topic-content a {
+  font-weight: bold;
+  color: #3772FF;
   font-family: inherit;
+}
+.topic-content a:hover {
+  color: #DF2935;
+  text-decoration: none;
 }
 
 h3 {
@@ -9919,6 +9924,16 @@ h2 {
 
 .nav-link:hover {
   text-decoration: underline;
+}
+
+.arrowDown {
+  transform: rotate(180deg);
+  transition: transform 250ms ease-in-out;
+}
+
+.arrowUp {
+  transform: rotate(0deg);
+  transition: transform 250ms ease-in-out;
 }
 
 #footer {
