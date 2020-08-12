@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ChurchAttendance from './ChurchAttendance.js';
 import BishopsInterviews from './BishopsInterviews.js';
 import TithingSettlement from './TithingSettlement.js';
 import AntiMormon from './AntiMormon.js';
 import MoralAmbiguity from './MoralAmbiguity.js';
+import GeneralExperimentation from './GeneralExperimentation.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 const Topics = () => {
@@ -11,6 +12,8 @@ const Topics = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+    const [expandedExperimentation, setExpandedExperimentation] = useState(false);
 
     let {path, url} = useRouteMatch();
     return (
@@ -42,11 +45,11 @@ const Topics = () => {
                                     <Link onClick={scrollFunction} to={`${url}/moral-ambiguity`}>Moral Ambiguity</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle">Experimentation and Harm Reduction</Link>
+                                    <Link data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle" onClick={() => setExpandedExperimentation(!expandedExperimentation)}><span style={{'fontSize': '80%'}}>{expandedExperimentation === false ? '+ ' : '- '}</span>Experimentation and Harm Reduction</Link>
                                     <div className="collapse" id="experimentation-list">
                                         <ol className="list-group pl-5">
-                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/experimentation/general`}>General Harm Reduction and Self-Care</Link></li>
-                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/experimentation/general`}>General Harm Reduction and Self-Care</Link></li>
+                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Harm Reduction and Self-Care</Link></li>
+                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
                                         </ol>
                                     </div>
                                 </li>
@@ -100,6 +103,8 @@ const Topic = () => {
             return (<AntiMormon />);
         case 'moral-ambiguity':
             return (<MoralAmbiguity />);
+        case 'general-experimentation':
+            return (<GeneralExperimentation/>);
     }
 }
 

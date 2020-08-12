@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 
 const TithingSettlement = () => {
     const [rotateArrow1, setRotateArrow1] = useState(true);

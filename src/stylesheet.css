@@ -9895,7 +9895,7 @@ blockquote {
   font-style: italic;
 }
 
-b, ol, ul, li, i {
+b, ol, ul, li, i, span {
   background-color: inherit !important;
   font-family: inherit;
   font-size: inherit;
