@@ -9951,6 +9951,10 @@ h2 {
   text-decoration: none;
 }
 
+#title-colorbox {
+  width: 100%;
+}
+
 #title {
   font-size: calc(52px + .5vw);
   color: #f7f7f7;

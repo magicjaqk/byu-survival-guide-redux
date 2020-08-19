@@ -7,7 +7,7 @@ const GeneralExperimentation = () => {
                 <div className="col-lg-3" />
                 <div className="col-lg-6">
                     <div id="title-colorbox" className="bg-primary">
-                        <h1 className="m-auto text-center text-white p-5" id="title">
+                        <h1 className="m-auto text-center text-white p-md-5 py-5" id="title">
                             General Risk Managment
                         </h1>
                     </div>

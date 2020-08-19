@@ -5,6 +5,7 @@ import TithingSettlement from './TithingSettlement.js';
 import AntiMormon from './AntiMormon.js';
 import MoralAmbiguity from './MoralAmbiguity.js';
 import GeneralExperimentation from './GeneralExperimentation.js';
+import GaySexRisks from './GaySexRisks.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 
 const Topics = () => {
@@ -24,7 +25,7 @@ const Topics = () => {
                         <div className="col-md-3" />
                         <div className="col-md-6">
                             <div id="title-colorbox" className="bg-primary">
-                                <h1 className="mx-auto text-center text-white p-5" id="title">
+                                <h1 className="mx-auto text-center text-white p-md-5 py-5" id="title">
                                     Topics
                                 </h1>
                             </div>
@@ -48,7 +49,7 @@ const Topics = () => {
                                     <Link data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle" onClick={() => setExpandedExperimentation(!expandedExperimentation)}><span style={{'fontSize': '80%'}}>{expandedExperimentation === false ? '+ ' : '- '}</span>Experimentation and Harm Reduction</Link>
                                     <div className="collapse" id="experimentation-list">
                                         <ol className="list-group pl-5">
-                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Harm Reduction and Self-Care</Link></li>
+                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
                                             <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
                                         </ol>
                                     </div>
@@ -105,6 +106,8 @@ const Topic = () => {
             return (<MoralAmbiguity />);
         case 'general-experimentation':
             return (<GeneralExperimentation/>);
+        case 'gay-sex-risk-management':
+            return (<GaySexRisks />);
     }
 }
 

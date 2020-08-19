@@ -99,10 +99,9 @@ h2 {
 //     }
 // }
 
-// #title-colorbox {
-//     z-index: -1;
-//     animation: intro 2000ms ease-in-out 1 forwards;
-// }
+#title-colorbox {
+    width: 100%;
+}
 
 #title {
     font-size: calc(52px + .5vw);
