@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ChurchAttendance from './ChurchAttendance.js';
 import BishopsInterviews from './BishopsInterviews.js';
 import TithingSettlement from './TithingSettlement.js';
@@ -14,7 +14,17 @@ const Topics = () => {
         document.documentElement.scrollTop = 0;
     }
 
-    const [expandedExperimentation, setExpandedExperimentation] = useState(false);
+    const [expandedExperimentation, setExpandedExperimentation] = useState('+ ');
+
+    const PlusOrMinus = () => {
+        if (expandedExperimentation === '+ ') {
+            setExpandedExperimentation('- ');
+        }
+        else {
+            setExpandedExperimentation('+ ');
+        }
+        return;
+    };
 
     let {path, url} = useRouteMatch();
     return (
@@ -46,11 +56,11 @@ const Topics = () => {
                                     <Link onClick={scrollFunction} to={`${url}/moral-ambiguity`}>Moral Ambiguity</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle" onClick={() => setExpandedExperimentation(!expandedExperimentation)}><span style={{'fontSize': '80%'}}>{expandedExperimentation === false ? '+ ' : '- '}</span>Experimentation and Harm Reduction</Link>
+                                    <Link data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle" onClick={PlusOrMinus}><span style={{'fontSize': '80%'}}>{expandedExperimentation}</span>Experimentation and Harm Reduction</Link>
                                     <div className="collapse" id="experimentation-list">
                                         <ol className="list-group pl-5">
-                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
-                                            <li className="list-group-item"><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
+                                            <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
+                                            <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
                                         </ol>
                                     </div>
                                 </li>
