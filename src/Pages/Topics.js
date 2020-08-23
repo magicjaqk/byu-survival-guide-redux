@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import ChurchAttendance from './ChurchAttendance.js';
 import BishopsInterviews from './BishopsInterviews.js';
 import TithingSettlement from './TithingSettlement.js';
@@ -6,7 +6,9 @@ import AntiMormon from './AntiMormon.js';
 import MoralAmbiguity from './MoralAmbiguity.js';
 import GeneralExperimentation from './GeneralExperimentation.js';
 import GaySexRisks from './GaySexRisks.js';
+import MaintainingAppearances from './MaintainingAppearances.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
+import FamilyRelations from './FamilyRelations.js';
 
 const Topics = () => {
     const scrollFunction = () => {
@@ -32,8 +34,8 @@ const Topics = () => {
             <Route exact path={path}>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-3" />
-                        <div className="col-md-6">
+                        <div className="col-lg-3" />
+                        <div className="col-lg-6">
                             <div id="title-colorbox" className="bg-primary">
                                 <h1 className="mx-auto text-center text-white p-md-5 py-5" id="title">
                                     Topics
@@ -87,7 +89,7 @@ const Topics = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-md-3" />
+                        <div className="col-lg-3" />
                     </div>
                 </div>
             </Route>
@@ -118,6 +120,10 @@ const Topic = () => {
             return (<GeneralExperimentation/>);
         case 'gay-sex-risk-management':
             return (<GaySexRisks />);
+        case 'maintaining-appearances':
+            return (<MaintainingAppearances />);
+        case 'family-relations':
+            return (<FamilyRelations />);
     }
 }
 
