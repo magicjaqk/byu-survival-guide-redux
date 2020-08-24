@@ -1,7 +1,7 @@
 $primary: rgb(3, 37, 78);
 $secondary: #3c4647;
 $success: #1c9711;
-$info: #034d6b;
+$info: #3772FF;
 $warning: #ceb007;
 $danger: #bb1010;
 $light: #f5efed;
@@ -38,7 +38,7 @@ b,ol,ul,li,i, span {
 
 .topic-content a {
     font-weight: bold;
-    color: #3772FF;
+    color: $info;
     font-family: inherit;
     &:hover {
         color: #DF2935;

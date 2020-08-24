@@ -9,6 +9,7 @@ import GaySexRisks from './GaySexRisks.js';
 import MaintainingAppearances from './MaintainingAppearances.js';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 import FamilyRelations from './FamilyRelations.js';
+import SelfCare from './SelfCare.js';
 
 const Topics = () => {
     const scrollFunction = () => {
@@ -124,6 +125,8 @@ const Topic = () => {
             return (<MaintainingAppearances />);
         case 'family-relations':
             return (<FamilyRelations />);
+        case 'self-care-wellness':
+            return (<SelfCare />);
     }
 }
 
