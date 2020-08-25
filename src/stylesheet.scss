@@ -8,6 +8,8 @@ $light: #f5efed;
 $dark: #0f0a0a;
 $white: #f7f7f7;
 
+$list-group-border-radius: 0px;
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sen&display=swap');
 
@@ -46,6 +48,14 @@ b,ol,ul,li,i, span {
     }
 }
 
+h5 {
+    font-size: calc(16px + .5vw);
+}
+
+h4 {
+    font-size: calc(18px + .5vw);
+}
+
 h3 {
     font-family: 'sen', sans-serif;
     margin-bottom: 20px;
@@ -72,6 +82,22 @@ h2 {
     transform: rotate(0deg);
     transition: transform 250ms ease-in-out;
 }
+
+.btn {
+    border-radius: 0px;
+    //box-shadow: 3px 2px 8px -3px $dark;
+}
+
+.list-group-item {
+    &:first-child {
+        @include border-top-radius($list-group-border-radius);
+    }
+
+    &:last-child {
+        @include border-bottom-radius($list-group-border-radius);
+    }
+}
+
 
 #footer {
     font-size: calc(14px + .5vw);
