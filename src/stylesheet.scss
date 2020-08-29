@@ -8,7 +8,7 @@ $light: #f5efed;
 $dark: #0f0a0a;
 $white: #f7f7f7;
 
-$list-group-border-radius: 0px;
+//$list-group-border-radius: 0px;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Sen&display=swap');
@@ -83,21 +83,27 @@ h2 {
     transition: transform 250ms ease-in-out;
 }
 
-.btn {
-    border-radius: 0px;
-    //box-shadow: 3px 2px 8px -3px $dark;
+#supportContentBanner {
+    & #left {
+        border-radius: $list-group-border-radius 0px 0px 0px;
+    }
+    & #right {
+        border-radius: 0px $list-group-border-radius 0px 0px !important;
+    }
+    & #selfCareButton {
+        border-radius: 0px $list-group-border-radius 0px 0px !important;
+    }
 }
 
 .list-group-item {
     &:first-child {
-        @include border-top-radius($list-group-border-radius);
+        @include border-top-radius(0px);
     }
 
     &:last-child {
         @include border-bottom-radius($list-group-border-radius);
     }
 }
-
 
 #footer {
     font-size: calc(14px + .5vw);

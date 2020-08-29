@@ -17,6 +17,14 @@ const SelfCare = () => {
                             <br/>
                             There’s no requirement of feeling unhealthy to seek professional guidance or make accommodations for yourself. Please take care of yourself as best you can. You’re valued and we care about you. Don’t hesitate to reach out via the <a href="finding-a-group">Finding a Group</a> page if you’re in need of a community/social support system. <br/>
                         </p>
+                        <div id="supportContentBanner" className="row m-auto mx-2 align-middle">
+                            <div id="left" className="col-10 col-md-10 bg-info">
+                                <h3 className="text-white text-center"><b>Self-Care Resources</b></h3>
+                            </div>
+                            <div id="right" className="col-2 col-md-2 bg-info p-0">
+                                <button id="selfCareButton" className="text-white text-center btn btn-info w-100 h-100 p-0 active"><h3><i className="fas fa-chevron-down" style={{'fontSize':'100%'}}></i></h3></button>
+                            </div>
+                        </div>
                         <SupportList />
                     </div>
                 </div>
@@ -29,14 +37,6 @@ const SelfCare = () => {
 const SupportList = () => {
     return (
         <div>
-            <div className="row m-auto mx-2">
-                <div className="col-md-11 bg-info">
-                    <h3 className="text-white text-center"><b>INSERT TITLE HERE</b></h3>
-                </div>
-                <div className="col-md-1 bg-info">
-                    <h3 className="text-white text-center btn btn-info">V</h3>
-                </div>
-            </div>
             <ol className="list-group">
                 <li className="list-group-item">
                     <h4 style={{ 'textDecoration': 'underline' }}><b>National Suicide Prevention Lifeline:</b></h4>
