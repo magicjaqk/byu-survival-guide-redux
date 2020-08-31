@@ -13,8 +13,17 @@ import SelfCare from './SelfCare.js';
 
 const Topics = () => {
     const scrollFunction = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        if (CSS.supports('scroll-behavior', 'smooth')) {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        else {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
     }
 
     const [expandedExperimentation, setExpandedExperimentation] = useState('+ ');

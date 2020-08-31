@@ -9944,6 +9944,36 @@ h2 {
   transition: transform 250ms ease-in-out;
 }
 
+.border-0 {
+  border-radius: 0px;
+  padding: 0px;
+}
+
+#content-selector {
+  position: absolute;
+  top: -30rem;
+  overflow: show;
+  z-index: 5;
+  transition: top 250ms ease-in-out;
+}
+#content-selector.show {
+  top: 0px;
+}
+
+#banner-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+#cover {
+  position: relative;
+  z-index: 10;
+}
+
+#callings {
+  min-height: 13em;
+}
+
 #supportContentBanner #left {
   border-radius: 0.25rem 0px 0px 0px;
 }
@@ -9952,6 +9982,8 @@ h2 {
 }
 #supportContentBanner #selfCareButton {
   border-radius: 0px 0.25rem 0px 0px !important;
+  position: absolute;
+  z-index: 30;
 }
 
 .list-group-item:first-child {
@@ -9961,6 +9993,16 @@ h2 {
 .list-group-item:last-child {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
+}
+
+.last-item {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.first-item {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 #footer {

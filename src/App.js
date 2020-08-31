@@ -1,5 +1,4 @@
 import React from 'react';
-//import './App.css';
 import './stylesheet.css';
 import NavBar from './NavBar';
 import Home from './Pages/Home';
@@ -7,13 +6,24 @@ import About from './Pages/About';
 import Topics from './Pages/Topics';
 import StudentExperiences from './Pages/StudentExperiences';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-// --VERSION WITH TRANSITIONS UNDER DEVELOPMENT IN './App-with-transitions.js'
-//import {CSSTransition, TransitionGroup} from 'react-transition-group';
+import smoothscroll from 'smoothscroll-polyfill';
 
 const App = () => {
+    smoothscroll.polyfill();
+
     const scrollFunction = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+        if (CSS.supports('scroll-behavior: smooth')) {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        else {
+            console.log('no-smooth-scrolling');
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
     }
 
     return (

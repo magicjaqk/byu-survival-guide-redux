@@ -7,6 +7,7 @@ $danger: #bb1010;
 $light: #f5efed;
 $dark: #0f0a0a;
 $white: #f7f7f7;
+$grey: #D8D8D8;
 
 //$list-group-border-radius: 0px;
 
@@ -83,6 +84,37 @@ h2 {
     transition: transform 250ms ease-in-out;
 }
 
+.border-0 {
+    border-radius: 0px;
+    padding: 0px;
+}
+
+#content-selector {
+    position: absolute;
+    top: -30rem;
+    overflow: show;
+    z-index: 5;
+
+    &.show {
+        top: 0px;
+    }
+    transition: top 250ms ease-in-out;
+}
+
+#banner-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#cover {
+    position: relative;
+    z-index: 10;
+}
+
+#callings {
+    min-height: 13em;
+}
+
 #supportContentBanner {
     & #left {
         border-radius: $list-group-border-radius 0px 0px 0px;
@@ -92,6 +124,8 @@ h2 {
     }
     & #selfCareButton {
         border-radius: 0px $list-group-border-radius 0px 0px !important;
+        position: absolute;
+        z-index: 30;
     }
 }
 
@@ -103,6 +137,14 @@ h2 {
     &:last-child {
         @include border-bottom-radius($list-group-border-radius);
     }
+}
+
+.last-item {
+    @include border-bottom-radius($list-group-border-radius);
+}
+
+.first-item {
+    @include border-top-radius($list-group-border-radius);
 }
 
 #footer {
