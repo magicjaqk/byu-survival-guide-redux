@@ -61,18 +61,14 @@ const SelfCare = () => {
                             </div>
                             <div id="content-selector" className={arrow ? '' : 'show'}>
                                 <div className="row m-auto mx-2 align-middle">
-                                    <div className={`col-10 btn-info btn border-0 first-item ${isActive('1')}`} onClick={() => buttonFunc('1')}>
-                                        <Link to={`${url}`}><h3 className="text-white text-center px-2"><b>Self-Care Resources</b></h3></Link>
-                                    </div>
-                                    <div className={`col-10 btn-info btn border-0 ${isActive('2')}`} onClick={() => buttonFunc('2')}>
-                                        <Link to={`${url}/guidlines`}><h3 className="text-white text-center px-2"><b>General Guidelines</b></h3></Link>
-                                    </div>
-                                    <div className={`col-10 btn-info btn border-0 ${isActive('3')}`} onClick={() => buttonFunc(3)}>
-                                        <Link to={`${url}/callings`}><h3 className="text-white text-center px-2"><b>Callings</b></h3></Link>
-                                    </div>
-                                    <div className={`col-10 btn-info btn border-0 last-item ${isActive('4')}`} onClick={() => buttonFunc('4')}>
-                                        <Link to={`${url}/byu-counseling`}><h3 className="text-white text-center px-2"><b>BYU Counseling</b></h3></Link>
-                                    </div>
+                                    <Link className={`col-10 btn-info btn border-0 first-item ${isActive('1')}`} onClick={() => buttonFunc('1')} to={`${url}`}><h3 className="text-white text-center px-2"><b>Self-Care Resources</b></h3>
+                                    </Link>
+                                    <Link className={`col-10 btn-info btn border-0 ${isActive('2')}`} onClick={() => buttonFunc('2')} to={`${url}/guidlines`}><h3 className="text-white text-center px-2"><b>General Guidelines</b></h3>
+                                    </Link>
+                                    <Link className={`col-10 btn-info btn border-0 ${isActive('3')}`} onClick={() => buttonFunc(3)} to={`${url}/callings`}><h3 className="text-white text-center px-2"><b>Callings</b></h3>
+                                    </Link>
+                                    <Link className={`col-10 btn-info btn border-0 last-item ${isActive('4')}`} onClick={() => buttonFunc('4')} to={`${url}/byu-counseling`}><h3 className="text-white text-center px-2"><b>BYU Counseling</b></h3>
+                                    </Link>
                                 </div>
                             </div>
                             <Switch>
