@@ -9910,6 +9910,10 @@ b, ol, ul, li, i, span {
   color: #DF2935;
   text-decoration: none;
 }
+.topic-content a .no-hover:hover {
+  color: inherit;
+  text-decoration: none;
+}
 
 h5 {
   font-size: calc(16px + .5vw);

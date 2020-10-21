@@ -19,7 +19,7 @@ const SelfCare = () => {
     };
 
     const isActive = (num) => {
-        if (numActive == num) {
+        if (numActive === num) {
             return 'active';
         }
         else {
@@ -254,7 +254,7 @@ const BYUCounseling = (props) => {
                 <p>
                     You don’t have to be broken, mentally diagnosed with anything, or incapable to go in and get some help. Their staff takes privacy very seriously at the expense of losing their licenses, so you are safe talking with any of them about your struggles and you can have the reassurance they won’t turn you in for not believing in the church, committing major sins, or even breaking the honor code. They are only required to report if you or another person is in imminent danger, and in that case they report to your family or law enforcement, not to the church. They put your health first, and while they all need temple recommends to work for BYU, they will all respect working through solutions to better health with you that disclude reading scriptures, praying, fasting, etc if you let them know those solutions are not helpful to you because you lost your faith. They are all educated enough not to recommend scientifically unfounded and harmful practices such as reparative therapy to the LGBTQ community. They are all LGBTQ friendly and non-believing friendly. For a recommendation of someone who could fit your needs well, contact <a href="https://goo.gl/forms/cbbpPK0B7QWOeYf63">BYU Guru</a>. <br/>
                     <br/>
-                    One major issue with the counseling center is getting in. They service ⅓ of students at BYU so if you need help it may still be 3-4 weeks before they can find you an appointment. Other solutions include: <br/>
+                    One major issue with the counseling center is getting in. They service a third of students at BYU so if you need help it may still be 3-4 weeks before they can find you an appointment. Other solutions include: <br/>
                     <ul>
                         <li><a href="https://caps.byu.edu/silvercloud">SilverCloud</a>- an online, work at your own pace, non face to face counseling service by BYU where you receive education on how to better your health and can include an interactive journal with a counseling student if desired.</li>
                         <li>Group counseling- ask about this option at the desk.</li>
