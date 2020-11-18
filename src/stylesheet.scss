@@ -39,6 +39,10 @@ b,ol,ul,li,i, span {
     font-size: inherit;
 }
 
+li ul {
+    list-style: disc;
+}
+
 .topic-content a {
     font-weight: bold;
     color: $info;

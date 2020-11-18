@@ -12,6 +12,8 @@ import FamilyRelations from './FamilyRelations.js';
 import SelfCare from './SelfCare.js';
 import LGBTResources from './LGBTResources.js';
 import FindingAGroup from './FindingAGroup.js';
+import SchoolTransferGuide from './SchoolTransferGuide.js';
+import RelevantLinks from './RelevantLinks.js';
 
 const Topics = () => {
     const scrollFunction = () => {
@@ -142,6 +144,10 @@ const Topic = () => {
             return (<LGBTResources />);
         case 'find-a-group':
             return (<FindingAGroup />);
+        case 'school-transfer-guide':
+            return <SchoolTransferGuide />;
+        case 'relevant-links':
+            return <RelevantLinks />;
     }
 }
 
