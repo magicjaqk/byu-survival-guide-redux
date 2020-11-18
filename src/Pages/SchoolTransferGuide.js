@@ -404,7 +404,7 @@ const Part2 = (props) => {
 };
 
 const Part3 = (props) => {
-    props.setSub('PART 3');
+    props.setSub('How to Survive While at BYU');
     props.setActive('3');
 
     return (
@@ -440,7 +440,7 @@ const Part3 = (props) => {
                                 <br/>
                             </li>
                             <li>
-                                Take a philosophy course! You’re allowed to argue without too much suspicion 😉 And these professors have a little more freedom regarding controversial topics (arguments against God’s existence, the folly of religion, etc). <br/>
+                                Take a philosophy course! You’re allowed to argue without too much suspicion <span role="img" aria-label="winking emoji">😉</span> And these professors have a little more freedom regarding controversial topics (arguments against God’s existence, the folly of religion, etc). <br/>
                                 <br/>
                             </li>
                             <li>

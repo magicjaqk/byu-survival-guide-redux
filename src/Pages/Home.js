@@ -2,6 +2,20 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Home = () => {
+    const scrollFunction = () => {
+        if (CSS.supports('scroll-behavior', 'smooth')) {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        else {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    }
+
     return (
         <div className="container-fluid page-wrapper" id="Home">
             <div className="row">
@@ -12,16 +26,16 @@ const Home = () => {
                             Welcome to the BYU Survival Guide!
                         </h1>
                     </div>
-                    <div className="text-left">
+                    <div className="page-content topic-content mt-4 mx-2">
                         <h2 className="text-primary">
-                            Some of you may wonder why this exists:
+                            Why We Exist:
                         </h2>
                         <p className="page-text text-wrap">
-                            We all want our campus to be a place of social support and acceptance for those who are in need of a community. Our campus family has members who are struggling to feel accepted and loved because of the systems that BYU has in place to restrict liberal experimentation of one’s religious preference unless that preference is to convert to the Church of Jesus Christ of Latter-Day Saints. FreeBYU targets changing current policies to promote religious freedom on BYU’s campus; however, until those changes are officially adopted, here are some possible resources for those who don’t quite fit the mold to find community and live according to the standards in which they feel most comfortable. The social consequences for publicly expressing one’s shift in religious belief from LDS member to non/partial-believer can be dire. If you are struggling, welcome! If you don’t feel this guide is for you, I hope you can pass this along to anyone you feel might benefit from it. We depend on all people–independent of where you fall on the spectrum of belief–to aid in creating and fostering a healthy environment for everyone who wants to call themselves a part of the BYU campus family.
+                            We all want our campus to be a place of social support and acceptance for those who are in need of a community. Our campus family has members who are struggling to feel accepted and loved because of the systems that BYU has in place to restrict liberal experimentation of one’s religious preference unless that preference is to convert to the Church of Jesus Christ of Latter-Day Saints. FreeBYU targets changing current policies to promote religious freedom on BYU’s campus; however, until those changes are officially adopted, here are some possible resources for those who don’t quite fit the mold to find community and live according to the standards in which they feel most comfortable. The social consequences for publicly expressing one’s shift in religious belief from LDS member to non/partial-believer can be dire. If you are struggling, welcome! If you don’t feel this guide is for you, I hope you can pass this along to anyone you feel might benefit from it. We depend on all people&mdash;independent of where you fall on the spectrum of belief&mdash;to aid in creating and fostering a healthy environment for everyone who wants to call themselves a part of the BYU campus family.
                         </p>
-                        <h2 className="text-primary w-auto">
-                            <Link to="/student-experiences" className="badge badge-secondary text-wrap">See Some BYU Students' Experiences to See Why This Affects Them</Link>
-                        </h2>
+                        <div className="d-flex justify-content-center my-3">
+                            <Link className="w-100" to="/student-experiences"><button style={{ 'fontSize': 'inherit' }} className="btn btn-outline-info w-100" onClick={scrollFunction}><h3>Find out more about what students experience at BYU</h3></button></Link>
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-3" />

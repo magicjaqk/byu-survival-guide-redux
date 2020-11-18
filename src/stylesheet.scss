@@ -7,7 +7,7 @@ $danger: #bb1010;
 $light: #f5efed;
 $dark: #0f0a0a;
 $white: #f7f7f7;
-$grey: #D8D8D8;
+$blue-grey: #9fabc2;
 
 //$list-group-border-radius: 0px;
 
@@ -191,4 +191,8 @@ h2 {
 //         color: white;
 //         mix-blend-mode: screen;
 //     }
+}
+
+.bg-blue-grey {
+    background-color: $blue-grey;
 }
