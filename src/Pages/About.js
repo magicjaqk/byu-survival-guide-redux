@@ -16,6 +16,17 @@ const About = () => {
                             This is the work of many individuals. Some of us are willing to be named, but others have chosen to remain anonymous for the sake of preserving relationships and their school-standing. We appreciate the work of all those who contributed. This project could not be what it is without your valuable insights. <br/>
                             <br/>
                             As for us who can and want to be named:
+
+                            <div className="card my-4 about-card">
+                                <div className="card-body">
+                                    <h2 className="card-title mt-0">Andrew Jacobs</h2>
+                                    <p>
+                                        I used to be a student at BYU. I lost my faith in the Mormon church while there. I eventually found and became part of a group of students who had similarly lost their faith. Realizing that there were others like me who were not lucky enough to stumble upon our very hard to find group, and realizing that advertising the existence of our group was not academically safe, I came up with the idea of a 'survival guide' that would spread helpful information to other students who need it. In order to be more public about the project, lending it more credibility and trustworthiness, I transferred to University of Utah.<br/>
+                                        <br/>
+                                        Now there, I study Philosophy with a focus on <i>Philosophy of Mind</i> and <i>Moral Philosophy</i> with the ultimate intent of further developing the philosophy of <i>Mental Security</i>.
+                                    </p>
+                                </div>
+                            </div>
                         </p>
                     </div>
                 </div>

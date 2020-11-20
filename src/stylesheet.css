@@ -9965,6 +9965,11 @@ h2 {
   padding: 0px;
 }
 
+.about-card {
+  background-color: #f1f1f1;
+  border: solid #9fabc2 4px;
+}
+
 #content-selector {
   position: absolute;
   top: -30rem;

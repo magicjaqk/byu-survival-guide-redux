@@ -105,6 +105,12 @@ h2 {
     padding: 0px;
 }
 
+.about-card {
+    background-color: #f1f1f1;
+    border: solid $blue-grey 4px;
+    //box-shadow: $blue-grey 2px 2px 6px;
+}
+
 #content-selector {
     position: absolute;
     top: -30rem;
