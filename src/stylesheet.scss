@@ -27,6 +27,18 @@ p,.page-content,blockquote {
     font-size: calc(16px + .5vw);
 }
 
+.fade-transition-wrapper > *, ol {
+    animation: fadein ease-in 300ms;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 blockquote {
     border-left: solid 1.5px;
     padding-left: 10px;

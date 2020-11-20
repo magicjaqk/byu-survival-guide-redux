@@ -30,13 +30,15 @@ const App = () => {
         <Router>
             <div className="App">
                 <NavBar />
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/topics" component={Topics} />
-                    <Route path="/student-experiences" component={StudentExperiences} />
-                    <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found</h1>)} />
-                </Switch>
+                <div className="fade-transition-wrapper">
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route path="/topics" component={Topics} />
+                        <Route path="/student-experiences" component={StudentExperiences} />
+                        <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found</h1>)} />
+                    </Switch>
+                </div>
                 <div className="row mx-1">
                     <div className="col-lg-3" />
                     <div className="col-lg-6">
