@@ -35,7 +35,9 @@ const About = () => {
                                 <div className="card-body">
                                     <h2 className="card-title mt-0">Jared Brinton</h2>
                                     <p>
-                                       [TEMP TEXT]
+                                        I am a BYU alumnus. I underwent my faith crisis after my freshman year and while serving a mission. The first few years were tough and having people I could be open about my thoughts and experiences with is what helped me through. After returning to BYU, I helped start a BYU exmormon group that built needed support both for myself and for others. What started as a small friend group soon turned into a large community spanning three BYU schools. I’m hoping that this website and the groups behind it can continue into the future and make it easier for those who find themselves in similar situations. <br/>
+                                        <br/>
+                                        I graduated with a bachelor’s in Information Systems in 2019. I work in IT, live with my wife and two cats, and continue to participate in the community from time to time.
                                     </p>
                                     <div className="embed-responsive embed-responsive-16by9">
                                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kzYb_aceGGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -45,7 +47,7 @@ const About = () => {
 
                             <div className="card my-4 about-card">
                                 <div className="card-body">
-                                    <h2 className="card-title mt-0">Bradley Butters</h2>
+                                    <h2 className="card-title mt-0">Bradley Butters & Alana Butters</h2>
                                     <p>
                                         [TEMP TEXT]
                                     </p>
