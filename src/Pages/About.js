@@ -25,6 +25,27 @@ const About = () => {
                                         <br/>
                                         Now there, I study Philosophy with a focus on <i>Philosophy of Mind</i> and <i>Moral Philosophy</i> with the ultimate intent of further developing the philosophy of <i>Mental Security</i>.
                                     </p>
+                                    <div className="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WS_3d2H2mzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="card my-4 about-card">
+                                <div className="card-body">
+                                    <h2 className="card-title mt-0">Jared Brinton</h2>
+                                    <p>
+                                       [TEMP TEXT]
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="card my-4 about-card">
+                                <div className="card-body">
+                                    <h2 className="card-title mt-0">Bradley Butters</h2>
+                                    <p>
+                                        [TEMP TEXT]
+                                    </p>
                                 </div>
                             </div>
                         </p>
