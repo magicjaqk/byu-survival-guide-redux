@@ -37,6 +37,9 @@ const About = () => {
                                     <p>
                                        [TEMP TEXT]
                                     </p>
+                                    <div className="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kzYb_aceGGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
 
@@ -46,6 +49,12 @@ const About = () => {
                                     <p>
                                         [TEMP TEXT]
                                     </p>
+                                    <div className="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mckY081OU4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div className="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vn_HVNyHnrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
                                 </div>
                             </div>
                         </p>
