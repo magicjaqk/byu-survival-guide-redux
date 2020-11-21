@@ -52,7 +52,7 @@ const About = () => {
                                     <div className="embed-responsive embed-responsive-16by9">
                                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mckY081OU4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
-                                    <div className="embed-responsive embed-responsive-16by9">
+                                    <div className="embed-responsive embed-responsive-16by9 mt-4">
                                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vn_HVNyHnrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
