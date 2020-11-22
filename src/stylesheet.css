@@ -9886,7 +9886,7 @@ html {
 
 p, .page-content, blockquote {
   font-family: "Noto Serif", serif;
-  font-size: calc(16px + .5vw);
+  font-size: calc(14px + .5vw);
 }
 
 .fade-transition-wrapper > *, ol {
@@ -9928,22 +9928,22 @@ li ul {
 }
 
 h5 {
-  font-size: calc(16px + .5vw);
+  font-size: calc(14px + .5vw);
 }
 
 h4 {
-  font-size: calc(18px + .5vw);
+  font-size: calc(16px + .5vw);
 }
 
 h3 {
   font-family: "sen", sans-serif;
   margin-bottom: 20px;
   margin-top: 20px;
-  font-size: calc(28px + .5vw);
+  font-size: calc(26px + .5vw);
 }
 
 h2 {
-  font-size: calc(34px + .5vw);
+  font-size: calc(32px + .5vw);
 }
 
 .nav-link:hover {
@@ -10027,7 +10027,7 @@ h2 {
 }
 
 #footer {
-  font-size: calc(14px + .5vw);
+  font-size: calc(12px + .5vw);
   font-family: "sen", sans-serif !important;
   margin-top: 10px;
 }
@@ -10046,7 +10046,7 @@ h2 {
 }
 
 #title {
-  font-size: calc(52px + .5vw);
+  font-size: calc(50px + .5vw);
   color: #f7f7f7;
 }
 
