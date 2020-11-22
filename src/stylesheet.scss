@@ -84,7 +84,12 @@ h2 {
     font-size: calc(32px + .5vw);
 }
 
+.navbar-brand {
+    font-size: calc(18px + .5vw);
+}
+
 .nav-link {
+    font-size: calc(14px + .5vw);
     &:hover {
         text-decoration: underline;
     }
