@@ -36,7 +36,7 @@ const App = () => {
                         <Route path="/about" component={About} />
                         <Route path="/topics" component={Topics} />
                         <Route path="/student-experiences" component={StudentExperiences} />
-                        <Route component={() => (<h1 className="mx-auto mt-3">Error: Page Not Found<br /><br /><Link to="/">Back to Home</Link></h1>)} />
+                        <Route component={() => (<div className="container-fluid text-danger" style={{"height": "100vh"}}><br /><br /><h1 className="mx-auto" style={{"fontSize": "calc(70px + .5vw)"}}>Page Not Found</h1><br/><br/><h3 className="mx-auto"><Link to='/' className="text-primary">Return to Home</Link></h3></div>)} />
                     </Switch>
                 </div>
                 <div className="row mx-1">
