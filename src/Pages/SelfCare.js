@@ -47,7 +47,7 @@ const SelfCare = () => {
                             <p>
                                 It’s important to take care of yourself. From eating well, to getting enough exercise, to maintaining mental health, you need to establish a strong discipline of self-care. <br/>
                                 <br/>
-                                There’s no requirement of feeling unhealthy to seek professional guidance or make accommodations for yourself. Please take care of yourself as best you can. You’re valued and we care about you. Don’t hesitate to reach out via the <a href="finding-a-group">Finding a Group</a> page if you’re in need of a community/social support system. <br/>
+                                There’s no requirement of feeling unhealthy to seek professional guidance or make accommodations for yourself. Please take care of yourself as best you can. You’re valued and we care about you. Don’t hesitate to reach out via the <a href="find-a-group">Finding a Group</a> page if you’re in need of a community/social support system. <br/>
                             </p>
                         </div>
                         <div id="banner-wrapper">
@@ -153,7 +153,7 @@ const SupportList = (props) => {
                     title="LGBTQ+ National Help Center"
                     phone="(888) 843-4564"
                     urlTitle="Online Chat"
-                    url="http://www.volunteerlogin.org/chat/"
+                    url="https://www.glbthotline.org/"
                 />
                 <SupportListing
                     title="BYU Counseling and Psychological Services (Free for Students)"
@@ -165,7 +165,7 @@ const SupportList = (props) => {
                     title="BYU Comprehensive Clinic"
                     phone="(801) 422-7759"
                     urlTitle="Website"
-                    url="https://comprehensiveclinic.byu.edu/Pages/home.aspx"
+                    url="https://comprehensiveclinic.byu.edu/"
                 />
                 <SupportListing
                     title="BYU Women’s Services and Resources"

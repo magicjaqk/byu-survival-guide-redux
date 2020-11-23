@@ -82,7 +82,8 @@ const RelevantLinks = () => {
                         <h3>Honor Code/Bishop Encounter Resources:</h3>
                         <ul className="list-group-flush pl-0">
                             <li className="list-group-item">
-                                <a href="http://www.freebyu.org/">FreeBYU</a>
+                                <a href="https://web.archive.org/web/20201108141404/http://www.freebyu.org/">FreeBYU*</a> <br />
+                                <p style={{'fontSize':'60%'}}>*The original site's domain has expired, and FreeBYU may not be active anymore. However, you can still browse what the website used to contain via <i>archive.org</i>.</p>
                             </li>
                             <li className="list-group-item">
                                 <a href="https://drive.google.com/file/d/13juCa0fsdy8A8rqeIRslasJwO0ks6vNz/view?usp=drivesdk">General Handbook of Instruction 1 (May 2019 Update)</a>
@@ -91,7 +92,7 @@ const RelevantLinks = () => {
                         <h3>Miscellaneous:</h3>
                         <ul className="list-group-flush pl-0">
                             <li className="list-group-item">
-                                <a href="https://www.timeforcambio.org">Time For Cambio</a>
+                                <a href="https://www.facebook.com/TimeforCambio/">Time For Cambio</a>
                             </li>
                             <li className="list-group-item">
                                 <a href="https://www.atheistsofutah.org">Atheists of Utah</a>
