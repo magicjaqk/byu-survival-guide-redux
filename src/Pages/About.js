@@ -47,9 +47,11 @@ const About = () => {
 
                             <div className="card my-4 about-card">
                                 <div className="card-body">
-                                    <h2 className="card-title mt-0">Bradley Butters & Alana Butters</h2>
+                                    <h2 className="card-title mt-0">Bradley Butters</h2>
                                     <p>
-                                        [TEMP TEXT]
+                                        I lost my faith at the beginning of my senior year in the mechanical engineering program at BYU. My familial, social, academic, and mental health challenges became distressing enough as a result of my faith crisis that I realized that myself and others NEEDED compassionate support in order to survive. I founded an underground support group for BYU students who had lost their faith and coordinated with other prexisting support groups to build community for students in distress.<br/>
+                                        <br/>
+                                        I graduated in 2019 with a bachelor's in mechanical engineering. I currently do composites engineering testing for Blue Origin, building rockets on Cape Canaveral in Florida.
                                     </p>
                                     <div className="embed-responsive embed-responsive-16by9">
                                         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mckY081OU4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
