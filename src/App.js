@@ -90,6 +90,8 @@ const OriginalSiteRerouter = () => {
             return <Redirect to="/topics/relevant-links" />;
         case 'what-are-your-fellow-classmates-experiencing':
             return <Redirect to="/student-experiences" />;
+        default:
+            return <Redirect to="/" />;
     }
     return <div />;
 };
