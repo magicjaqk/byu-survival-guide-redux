@@ -68,6 +68,9 @@ const LGBTResources = () => {
                             I promise. I almost killed myself over this issue, and I’m so glad that I didn’t. Life and love are so much better than I thought they could be. <br/>
                             <br/>
                         </p>
+                        <hr />
+                        <a href="https://byu.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=2d0b025e10e24ff9b679a00105f5dab0&extent=-111.6639%2C40.2446%2C-111.6346%2C40.2527">Map of Gender-Neutral Bathrooms at BYU</a>
+                        <hr />
                     </div>
                 </div>
                 <div className="col-lg-3" />
