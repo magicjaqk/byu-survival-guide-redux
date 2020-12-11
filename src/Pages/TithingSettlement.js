@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Accordion, Button } from 'react-bootstrap';
 
 const TithingSettlement = () => {
     const [rotateArrow1, setRotateArrow1] = useState(true);
@@ -63,71 +64,79 @@ const TithingSettlement = () => {
                             <br/>
                             If you need to know more about either of these methods, you can find them here:
                         </p>
-                        <button onClick={() => setRotateArrow1(!rotateArrow1)} className="btn btn-primary mb-3 w-100" style={{ 'fontSize': 'inherit', 'fontFamily':'Sen' }} data-toggle="collapse" data-target="#wire-transfer-collapse">Wire Transfer Payment Instructions<br/><i className={`fas fa-chevron-down ${alterArrow(rotateArrow1)}`} style={{'fontSize':'90%'}}></i></button>
-                        <div className="collapse" id="wire-transfer-collapse">
-                            <blockquote className="ml-2">
-                                To wire transfer donations to Church Headquarters: <br/>
-                                <br/>
-                                <p style={{'fontSize':'130%'}}>WIRE INSTRUCTIONS</p>
-                                Wire funds to: <br/>
-                                &emsp;&emsp;Zions First National Bank <br/>
-                                &emsp;&emsp;Salt Lake City, Utah <br/>
-                                &emsp;&emsp;ABA 124000054 <br/>
-                                <br/>
-                                For Credit to: <br/>
-                                &emsp;&emsp;Account Number: 001-20007-0 <br/>
-                                &emsp;&emsp;Account Name: Corporation of the President <br/>
-                                <br/>
-                                Originator to Beneficiary Information: <br/>
-                                &emsp;&emsp;Requested by ________________________ (donor’s name) <br/>
-                                <br/>
-                                <p style={{ 'fontSize': '130%' }}>ESSENTIAL INFORMATION</p>
-                                FAX or email essential information: <br/>
-                                <ol>
-                                    <li>donor’s name</li>
-                                    <li>address</li>
-                                    <li>donation category or categories (tithing, fast offering, etc. and amount)</li>
-                                </ol>
-                                Fax number: 801-240-2202 — Attention Donations Department <br/>
-                                <br/>
-                                Or email to: <a href="mailto:Donations@ldschurch.org">Donations@ldschurch.org</a>
-                            </blockquote>
-                        </div>
-                        <button onClick={() => setRotateArrow2(!rotateArrow2)} className="btn btn-primary mb-3 w-100" style={{ 'fontSize': 'inherit', 'fontFamily': 'Sen' }} data-toggle="collapse" data-target="#check-transfer-collapse">Check Transfer Payment Instructions<br/><i className={`fas fa-chevron-down ${alterArrow(rotateArrow2)}`} style={{ 'fontSize': '90%' }}></i></button>
-                        <div className="collapse" id="check-transfer-collapse">
-                            <blockquote className="ml-2">
-                                To send in a check for a donation make the check payable to Corporation of the President. <br/>
-                                <br/>
-                                Mail all donations to: <br/>
-                                &emsp;&emsp;Corporation of the President <br/>
-                                &emsp;&emsp;50 E North Temple, Room 1521 <br/>
-                                &emsp;&emsp;Salt Lake City, UT 84150 <br/>
-                                <br/>
-                                Include a tithing slip or a piece of paper that states: <br/>
-                                <ul>
-                                    <li>Name and Mailing Address</li>
-                                    <li><b>Membership Number: </b>You can request this from your ward clerk or it is on your temple recommend</li>
-                                    <li>Allocation of donation (see <a href="https://tech.lds.org/wiki/Donation_Categories">Donation Categories</a>)</li>
-                                    <li>Unit/Ward Number and Name</li>
-                                    <li>Please note that the only donations your ward could see are for: 
-                                        <ul>
-                                            <li>Fast Offering</li>
-                                            <li>Ward Missionary. If you are donating for a specific missionary, please also include: 
-                                                <ul>
-                                                    <li>Missionary’s Name</li>
-                                                    <li>Mission he/she is serving in</li>
-                                                    <li>Unit number of the ward funds need to go into (for USA only). For those members outside the United States, also include the home unit name where the missionary left from. Your funds will go in the General Missionary Fund instead of the Ward Missionary Fund. The Donations Department will then communicate with the Missionary Department.</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <br/>
-                                The donations department mails out receipts twice a year. You will receive one in November (like you would receive at tithing settlement) and one in January (tax-validated receipt). <br/>
-                                <br/>
-                                If you have further questions, please call 801-240-2554 or 1-800-453-3860 ext 2-2554 or email <a href="mailto:donations@ldschurch.org">donations@ldschurch.org</a>
-                            </blockquote>
-                        </div>
+                        <Accordion>
+                            <Accordion.Toggle as={Button} eventKey="0" onClick={() => setRotateArrow1(!rotateArrow1)} className="btn btn-primary mb-3 w-100" style={{ 'fontSize': 'inherit', 'fontFamily': 'Sen' }}>
+                                Wire Transfer Payment Instructions<br/><i className={`fas fa-chevron-down ${alterArrow(rotateArrow1)}`} style={{'fontSize':'90%'}}></i>
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <blockquote className="ml-2">
+                                    To wire transfer donations to Church Headquarters: <br/>
+                                    <br/>
+                                    <p style={{'fontSize':'130%'}}>WIRE INSTRUCTIONS</p>
+                                    Wire funds to: <br/>
+                                    &emsp;&emsp;Zions First National Bank <br/>
+                                    &emsp;&emsp;Salt Lake City, Utah <br/>
+                                    &emsp;&emsp;ABA 124000054 <br/>
+                                    <br/>
+                                    For Credit to: <br/>
+                                    &emsp;&emsp;Account Number: 001-20007-0 <br/>
+                                    &emsp;&emsp;Account Name: Corporation of the President <br/>
+                                    <br/>
+                                    Originator to Beneficiary Information: <br/>
+                                    &emsp;&emsp;Requested by ________________________ (donor’s name) <br/>
+                                    <br/>
+                                    <p style={{ 'fontSize': '130%' }}>ESSENTIAL INFORMATION</p>
+                                    FAX or email essential information: <br/>
+                                    <ol>
+                                        <li>donor’s name</li>
+                                        <li>address</li>
+                                        <li>donation category or categories (tithing, fast offering, etc. and amount)</li>
+                                    </ol>
+                                    Fax number: 801-240-2202 — Attention Donations Department <br/>
+                                    <br/>
+                                    Or email to: <a href="mailto:Donations@ldschurch.org">Donations@ldschurch.org</a>
+                                </blockquote>
+                            </Accordion.Collapse>
+                        </Accordion>
+                        <Accordion>
+                            <Accordion.Toggle as={Button} eventKey="0" onClick={() => setRotateArrow2(!rotateArrow2)} className="btn btn-primary mb-3 w-100" style={{ 'fontSize': 'inherit', 'fontFamily': 'Sen' }}>
+                                Check Transfer Payment Instructions<br/><i className={`fas fa-chevron-down ${alterArrow(rotateArrow2)}`} style={{ 'fontSize': '90%' }}></i>
+                            </Accordion.Toggle>
+                            <Accordion.Collapse eventKey="0">
+                                <blockquote className="ml-2">
+                                    To send in a check for a donation make the check payable to Corporation of the President. <br/>
+                                    <br/>
+                                    Mail all donations to: <br/>
+                                    &emsp;&emsp;Corporation of the President <br/>
+                                    &emsp;&emsp;50 E North Temple, Room 1521 <br/>
+                                    &emsp;&emsp;Salt Lake City, UT 84150 <br/>
+                                    <br/>
+                                    Include a tithing slip or a piece of paper that states: <br/>
+                                    <ul>
+                                        <li>Name and Mailing Address</li>
+                                        <li><b>Membership Number: </b>You can request this from your ward clerk or it is on your temple recommend</li>
+                                        <li>Allocation of donation (see <a href="https://tech.lds.org/wiki/Donation_Categories">Donation Categories</a>)</li>
+                                        <li>Unit/Ward Number and Name</li>
+                                        <li>Please note that the only donations your ward could see are for: 
+                                            <ul>
+                                                <li>Fast Offering</li>
+                                                <li>Ward Missionary. If you are donating for a specific missionary, please also include: 
+                                                    <ul>
+                                                        <li>Missionary’s Name</li>
+                                                        <li>Mission he/she is serving in</li>
+                                                        <li>Unit number of the ward funds need to go into (for USA only). For those members outside the United States, also include the home unit name where the missionary left from. Your funds will go in the General Missionary Fund instead of the Ward Missionary Fund. The Donations Department will then communicate with the Missionary Department.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <br/>
+                                    The donations department mails out receipts twice a year. You will receive one in November (like you would receive at tithing settlement) and one in January (tax-validated receipt). <br/>
+                                    <br/>
+                                    If you have further questions, please call 801-240-2554 or 1-800-453-3860 ext 2-2554 or email <a href="mailto:donations@ldschurch.org">donations@ldschurch.org</a>
+                                </blockquote>
+                            </Accordion.Collapse>
+                        </Accordion>
                         <h3>What to Say in Tithing Settlement:</h3>
                         <p>
                             Because it’s possible to pay via wire transfer or by check without the bishop knowing, all that needs to be said is “Yes, I am a full tithe payer.” <br/>

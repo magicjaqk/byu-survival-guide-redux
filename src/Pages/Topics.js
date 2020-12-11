@@ -1,4 +1,8 @@
 import React, {useState} from 'react';
+import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
+import Accordion from 'react-bootstrap/Accordion';
+
+//Pages components
 import ChurchAttendance from './ChurchAttendance.js';
 import BishopsInterviews from './BishopsInterviews.js';
 import TithingSettlement from './TithingSettlement.js';
@@ -7,7 +11,6 @@ import MoralAmbiguity from './MoralAmbiguity.js';
 import GeneralExperimentation from './GeneralExperimentation.js';
 import GaySexRisks from './GaySexRisks.js';
 import MaintainingAppearances from './MaintainingAppearances.js';
-import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 import FamilyRelations from './FamilyRelations.js';
 import SelfCare from './SelfCare.js';
 import LGBTResources from './LGBTResources.js';
@@ -72,13 +75,17 @@ const Topics = () => {
                                     <Link onClick={scrollFunction} to={`${url}/moral-ambiguity`}>Moral Ambiguity</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link to="" data-toggle="collapse" data-target="#experimentation-list" aria-expanded="false" id="experiment-toggle" onClick={PlusOrMinus}><span style={{'fontSize': '80%'}}>{expandedExperimentation}</span>Experimentation and Harm Reduction</Link>
-                                    <div className="collapse" id="experimentation-list">
-                                        <ol className="list-group-flush pl-5">
-                                            <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
-                                            <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
-                                        </ol>
-                                    </div>
+                                    <Accordion>
+                                        <Accordion.Toggle as={Link} variant="link" eventKey="0" onClick={PlusOrMinus}>
+                                            <span style={{'fontSize': '80%'}}>{expandedExperimentation}</span>Experimentation and Harm Reduction
+                                        </Accordion.Toggle>
+                                        <Accordion.Collapse eventKey="0">
+                                            <ol className="list-group-flush pl-5">
+                                                <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
+                                                <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
+                                            </ol>
+                                        </Accordion.Collapse>
+                                    </Accordion>
                                 </li>
                                 <li className="list-group-item">
                                     <Link onClick={scrollFunction} to={`${url}/maintaining-appearances`}>Maintaining Appearances</Link>

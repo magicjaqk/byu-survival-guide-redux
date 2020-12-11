@@ -26,7 +26,7 @@ const About = () => {
                                         Now there, I study Philosophy with a focus on <i>Philosophy of Mind</i> and <i>Moral Philosophy</i> with the ultimate intent of further developing the philosophy of <i>Mental Security</i>.
                                     </p>
                                     <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WS_3d2H2mzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe title="andrew-jacobs-yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WS_3d2H2mzk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ const About = () => {
                                         I graduated with a bachelor’s in Information Systems in 2019. I work in IT, live with my wife and two cats, and continue to participate in the community from time to time.
                                     </p>
                                     <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kzYb_aceGGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe title="jared-brinton-yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/kzYb_aceGGA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -54,10 +54,10 @@ const About = () => {
                                         I graduated in 2019 with a bachelor's in mechanical engineering. I currently do composites engineering testing for Blue Origin, building rockets on Cape Canaveral in Florida.
                                     </p>
                                     <div className="embed-responsive embed-responsive-16by9">
-                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mckY081OU4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe title="bradley-butters-yt" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mckY081OU4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                     <div className="embed-responsive embed-responsive-16by9 mt-4">
-                                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vn_HVNyHnrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <iframe title="bradley-butters-yt-2" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Vn_HVNyHnrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
                                 </div>
                             </div>

@@ -93,7 +93,6 @@ const OriginalSiteRerouter = () => {
         default:
             return <Redirect to="/" />;
     }
-    return <div />;
 };
 
 export default App;
