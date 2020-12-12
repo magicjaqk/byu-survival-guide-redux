@@ -52,7 +52,7 @@ const GaySexRisks = () => {
                         </p>
                         <hr/>
                         <p>
-                            Thank you to all those who helped in creating this page. Specifically, thank you to an unnamed friend who brought this perspective to the Survival Guide.
+                            <i>Thank you to all those who helped in creating this page. Specifically, thank you to an unnamed friend who brought this perspective to the Survival Guide.</i>
                         </p>
                     </div>
                 </div>

@@ -13,12 +13,14 @@ import GaySexRisks from './GaySexRisks.js';
 import MaintainingAppearances from './MaintainingAppearances.js';
 import FamilyRelations from './FamilyRelations.js';
 import SelfCare from './SelfCare.js';
-import LGBTResources from './LGBTResources.js';
+import QueerAtBYU from './QueerAtBYU.js';
 import FindingAGroup from './FindingAGroup.js';
 import SchoolTransferGuide from './SchoolTransferGuide.js';
 import RelevantLinks from './RelevantLinks.js';
 import Dating from './Dating.js';
 
+
+//Main page to display
 const Topics = () => {
     const scrollFunction = () => {
         if (CSS.supports('scroll-behavior', 'smooth')) {
@@ -34,17 +36,8 @@ const Topics = () => {
         }
     }
 
-    const [expandedExperimentation, setExpandedExperimentation] = useState('+ ');
-
-    const PlusOrMinus = () => {
-        if (expandedExperimentation === '+ ') {
-            setExpandedExperimentation('- ');
-        }
-        else {
-            setExpandedExperimentation('+ ');
-        }
-        return;
-    };
+    const [expandedExperimentation, setExpandedExperimentation] = useState(false);
+    const [expandedLGBTQ, setExpandedLGBTQ] = useState(false);
 
     let {path, url} = useRouteMatch();
     return (
@@ -77,13 +70,13 @@ const Topics = () => {
                                 </li>
                                 <li className="list-group-item">
                                     <Accordion>
-                                        <Accordion.Toggle as={Link} variant="link" eventKey="0" onClick={PlusOrMinus}>
-                                            <span style={{'fontSize': '80%'}}>{expandedExperimentation}</span>Experimentation and Harm Reduction
+                                        <Accordion.Toggle as={Link} variant="link" eventKey="0" onClick={() => setExpandedExperimentation(!expandedExperimentation)}>
+                                            <span style={{'fontSize': '80%'}}>{expandedExperimentation ? '- ': '+ '}</span>Experimentation and Harm Reduction
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
                                             <ol className="list-group-flush pl-5">
-                                                <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
-                                                <li className="list-group-item" onClick={() => setExpandedExperimentation('+ ')}><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
+                                                <li className="list-group-item" onClick={() => setExpandedExperimentation(!expandedExperimentation)}><Link onClick={scrollFunction} to={`${url}/general-experimentation`}>General Risk Management</Link></li>
+                                                <li className="list-group-item" onClick={() => setExpandedExperimentation(!expandedExperimentation)}><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
                                             </ol>
                                         </Accordion.Collapse>
                                     </Accordion>
@@ -98,7 +91,18 @@ const Topics = () => {
                                     <Link onClick={scrollFunction} to={`${url}/self-care-wellness`}>Self-Care/Mental Health and Wellness</Link>
                                 </li>
                                 <li className="list-group-item">
-                                    <Link onClick={scrollFunction} to={`${url}/lgbtq-resources`}>LGBTQ+ Resources</Link>
+                                    <Accordion>
+                                        <Accordion.Toggle as={Link} variant="link" eventKey="0" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}>
+                                            <span style={{'fontSize': '80%'}}>{expandedLGBTQ ? '- ' : '+ '}</span>LGBTQ+ Resources
+                                        </Accordion.Toggle>
+                                        <Accordion.Collapse eventKey="0">
+                                            <ol className="list-group-flush pl-5">
+                                                <li className="list-group-item" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}><Link onClick={scrollFunction} to={`${url}/queer-at-byu`}>Being Queer at BYU</Link></li>
+                                                <li className="list-group-item" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}><Link onClick={scrollFunction} to={`${url}/gay-sex-risk-management`}>Gay Sex and Risk Management</Link></li>
+                                                <li className="list-group-item"><a href="https://byu.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=2d0b025e10e24ff9b679a00105f5dab0&extent=-111.6639%2C40.2446%2C-111.6346%2C40.2527">Map of Gender-Neutral Bathrooms at BYU</a></li>
+                                            </ol>
+                                        </Accordion.Collapse>
+                                    </Accordion>
                                 </li>
                                 <li className="list-group-item">
                                     <Link onClick={scrollFunction} to={`${url}/dating`}>Dating</Link>
@@ -151,8 +155,8 @@ const Topic = () => {
             return (<FamilyRelations />);
         case 'self-care-wellness':
             return (<SelfCare />);
-        case 'lgbtq-resources':
-            return (<LGBTResources />);
+        case 'queer-at-byu':
+            return (<QueerAtBYU />);
         case 'find-a-group':
             return (<FindingAGroup />);
         case 'school-transfer-guide':

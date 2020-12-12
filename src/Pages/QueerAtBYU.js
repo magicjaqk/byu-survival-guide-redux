@@ -1,7 +1,7 @@
 import React from 'react';
 //import {Link} from 'react-router-dom';
 
-const LGBTResources = () => {
+const QueerAtBYU = () => {
     //    const scrollFunction = () => {
     //        document.body.scrollTop = 0;
     //        document.documentElement.scrollTop = 0;
@@ -66,11 +66,7 @@ const LGBTResources = () => {
                         </h3>
                         <p>
                             I promise. I almost killed myself over this issue, and I’m so glad that I didn’t. Life and love are so much better than I thought they could be. <br/>
-                            <br/>
                         </p>
-                        <hr />
-                        <a href="https://byu.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=2d0b025e10e24ff9b679a00105f5dab0&extent=-111.6639%2C40.2446%2C-111.6346%2C40.2527">Map of Gender-Neutral Bathrooms at BYU</a>
-                        <hr />
                     </div>
                 </div>
                 <div className="col-lg-3" />
@@ -79,4 +75,4 @@ const LGBTResources = () => {
     );
 };
 
-export default LGBTResources;
+export default QueerAtBYU;
