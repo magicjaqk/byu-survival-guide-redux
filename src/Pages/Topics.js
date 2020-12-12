@@ -17,6 +17,7 @@ import LGBTResources from './LGBTResources.js';
 import FindingAGroup from './FindingAGroup.js';
 import SchoolTransferGuide from './SchoolTransferGuide.js';
 import RelevantLinks from './RelevantLinks.js';
+import Dating from './Dating.js';
 
 const Topics = () => {
     const scrollFunction = () => {
@@ -100,6 +101,9 @@ const Topics = () => {
                                     <Link onClick={scrollFunction} to={`${url}/lgbtq-resources`}>LGBTQ+ Resources</Link>
                                 </li>
                                 <li className="list-group-item">
+                                    <Link onClick={scrollFunction} to={`${url}/dating`}>Dating</Link>
+                                </li>
+                                <li className="list-group-item">
                                     <Link onClick={scrollFunction} to={`${url}/find-a-group`}>Finding a Group</Link>
                                 </li>
                                 <li className="list-group-item">
@@ -153,6 +157,8 @@ const Topic = () => {
             return (<FindingAGroup />);
         case 'school-transfer-guide':
             return <SchoolTransferGuide />;
+        case 'dating':
+            return <Dating />;
         case 'relevant-links':
             return <RelevantLinks />;
     }
