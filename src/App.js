@@ -58,7 +58,6 @@ const App = () => {
 
 const OriginalSiteRerouter = () => {
     let {rerouteID} = useParams();
-    console.log(rerouteID);
     switch (rerouteID) {
         case 'bishops-interviews':
             return <Redirect to="/topics/bishops-interviews" />;

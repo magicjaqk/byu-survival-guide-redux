@@ -92,7 +92,7 @@ const Topics = () => {
                                 </li>
                                 <li className="list-group-item">
                                     <Accordion>
-                                        <Accordion.Toggle as={Link} variant="link" eventKey="0" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}>
+                                        <Accordion.Toggle as={Link} eventKey="0" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}>
                                             <span style={{'fontSize': '80%'}}>{expandedLGBTQ ? '- ' : '+ '}</span>LGBTQ+ Resources
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
