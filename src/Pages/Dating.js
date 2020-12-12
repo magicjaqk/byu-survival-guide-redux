@@ -83,8 +83,7 @@ const Dating = () => {
                             <br/>
                             Another word of caution: by getting involved with another person, you need to understand that <b>any sort of falling out between you has the potential to result in your ex-partner reporting to the honor code office as revenge</b>. You place a lot of trust in any individual with whom you interact in any way, but most especially sexually. Err more on the side of caution and avoid any situation you feel could lead to irreversible damage further down the line. <br/>
                             <br/>
-                            Finally, some good news: You really only have to worry about creating documentable evidence when using online dating apps. There are plenty of ways to network into non-BYU social circles. <br/>
-                            <br/>
+                            Finally, some good news: You really only have to worry about creating documentable evidence when using online dating apps. There are plenty of ways to network into non-BYU social circles.
                             <ul>
                                 <li>
                                     Attend UVU parties if you can (specifically without orthodox BYU-associated individuals whom you do not trust). Also, put out some feelers and make sure it's not a party that stereotypical, orthodox, LDS people will be inclined to attend.
