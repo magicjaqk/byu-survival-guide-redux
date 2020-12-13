@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route, Link, useRouteMatch, Redirect } from 'react-router-dom';
 import { useState } from 'react';
+import Helmet from 'react-helmet';
 
 const SchoolTransferGuide = () => {
     let { path, url } = useRouteMatch();
@@ -34,6 +35,10 @@ const SchoolTransferGuide = () => {
 
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>School Transfer Guide</title>
+                <meta name="description" content="A guide for transferring from BYU to a different school." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

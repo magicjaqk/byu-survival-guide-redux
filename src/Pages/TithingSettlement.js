@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Accordion, Button } from 'react-bootstrap';
+import Helmet from 'react-helmet';
 
 const TithingSettlement = () => {
     const [rotateArrow1, setRotateArrow1] = useState(true);
@@ -16,6 +17,10 @@ const TithingSettlement = () => {
 
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Tithing Settlement</title>
+                <meta name="description" content="A guide to passing the test of tithing settlement at BYU." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

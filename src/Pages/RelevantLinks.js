@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const RelevantLinks = () => {
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Relevant Links</title>
+                <meta name="description" content="A list of links that are relevant to the material of this website--faith transitions, mormon history, and other helpful resources." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

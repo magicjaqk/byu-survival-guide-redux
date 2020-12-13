@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const AntiMormon = () => {
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Moral Ambiguity</title>
+                <meta name="description" content="A guide to leaving space for moral growth and development." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">
