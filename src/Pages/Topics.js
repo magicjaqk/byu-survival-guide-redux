@@ -75,7 +75,7 @@ const Topics = () => {
                                 </li>
                                 <li className="list-group-item">
                                     <Accordion>
-                                        <Accordion.Toggle as={Link} variant="link" eventKey="0" onClick={() => setExpandedExperimentation(!expandedExperimentation)}>
+                                        <Accordion.Toggle as="a" variant="link" eventKey="0" className="listToggle" onClick={() => setExpandedExperimentation(!expandedExperimentation)}>
                                             <span style={{'fontSize': '80%'}}>{expandedExperimentation ? '- ': '+ '}</span>Experimentation and Harm Reduction
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
@@ -97,7 +97,7 @@ const Topics = () => {
                                 </li>
                                 <li className="list-group-item">
                                     <Accordion>
-                                        <Accordion.Toggle as={Link} eventKey="0" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}>
+                                        <Accordion.Toggle as="a" variant="link" eventKey="0" className="listToggle" onClick={() => setExpandedLGBTQ(!expandedLGBTQ)}>
                                             <span style={{'fontSize': '80%'}}>{expandedLGBTQ ? '- ' : '+ '}</span>LGBTQ+ Resources
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">

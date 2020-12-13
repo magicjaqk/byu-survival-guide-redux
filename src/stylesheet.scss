@@ -116,6 +116,15 @@ h2 {
     //box-shadow: $blue-grey 2px 2px 6px;
 }
 
+.listToggle {
+    color: $primary;
+    user-select: none;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
 #content-selector {
     position: absolute;
     top: -30rem;
