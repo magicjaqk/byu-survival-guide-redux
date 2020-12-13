@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const Dating = () => {
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Dating</title>
+                <meta name="description" content="An explanation of non-mormon dating at BYU." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

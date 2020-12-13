@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Link} from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 const FindingAGroup = () => {
     //    const scrollFunction = () => {
@@ -9,6 +9,10 @@ const FindingAGroup = () => {
 
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Finding a Group</title>
+                <meta name="description" content="A guide to finding a group of like-minded folk at BYU." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

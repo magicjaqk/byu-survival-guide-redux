@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const GeneralExperimentation = () => {
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>General Risk Management</title>
+                <meta name="description" content="A guide to safe experimentation with substances forbidden by mormonism." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

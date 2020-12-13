@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import {Link} from 'react-router-dom';
 
 const Home = () => {
@@ -18,6 +19,10 @@ const Home = () => {
 
     return (
         <div className="container-fluid page-wrapper" id="Home">
+            <Helmet>
+                <title>BYU Survival Guide</title>
+                <meta name="description" content="A guide to navigating a non-mormon life at a mormon-owned university." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

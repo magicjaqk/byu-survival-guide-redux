@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Link} from 'react-router-dom';
+import Helmet from 'react-helmet';
 
 const FamilyRelations = () => {
 //    const scrollFunction = () => {
@@ -9,6 +9,10 @@ const FamilyRelations = () => {
 
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Discussing Your Faith Crisis With Family</title>
+                <meta name="description" content="A guide to discussing a faith crisis with your family." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

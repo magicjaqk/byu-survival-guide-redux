@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const MaintainingAppearances = () => {
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Maintaining Appearances</title>
+                <meta name="description" content="A guide to keeping your departure from orthodox mormonism a secret." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

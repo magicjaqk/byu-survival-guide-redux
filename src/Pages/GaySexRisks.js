@@ -1,8 +1,13 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 const GaySexRisks = () => {
     return (
         <div className="container-fluid">
+            <Helmet>
+                <title>Gay Sex Risk Management</title>
+                <meta name="description" content="A guide to safe gay sex." />
+            </Helmet>
             <div className="row">
                 <div className="col-lg-3" />
                 <div className="col-lg-6">

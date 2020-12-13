@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Switch, Link, Route, useRouteMatch, useParams } from 'react-router-dom';
 import Accordion from 'react-bootstrap/Accordion';
+import Helmet from 'react-helmet';
 
 //Pages components
 import ChurchAttendance from './ChurchAttendance.js';
@@ -44,6 +45,10 @@ const Topics = () => {
         <Switch>
             <Route exact path={path}>
                 <div className="container-fluid">
+                    <Helmet>
+                        <title>Topics</title>
+                        <meta name="description" content="A gospel-topics selection of sorts for non-mormon BYU students" />
+                    </Helmet>
                     <div className="row">
                         <div className="col-lg-3" />
                         <div className="col-lg-6">
